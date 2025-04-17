@@ -1,9 +1,8 @@
 ---
-layout: post
-title: "Hello, World!"
-date: 2025-04-18 10:00:00 +0900
-categories: [테스트]
-tags: [블로그, 시작]
+title: TITLE
+date: 2025-04-17 22:25:45 +/-TTTT
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [TAG]     # TAG names should always be lowercase
 ---
 
 
