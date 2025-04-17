@@ -1,0 +1,226 @@
+# The Site Configuration
+
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: ko-KR
+
+# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Asia/Seoul
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: 眞澄龍影 진승룡영 # 메인 타이틀 - 블로그 이름
+
+tagline: 진실된 맑음 용의 그림자 # 부제목 - 블로그 설명
+
+description: >- # SEO와 피드에 사용되는 설명
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+
+# Fill in the protocol & hostname for your site.
+# E.g. 'https://username.github.io', note that it does not end with a '/'.
+url: "https://hd-cjy.github.io" # 사이트 URL - GitHub Pages를 사용한다면 "https://username.github.io" 형식으로 입력
+
+github:
+  username: hd-cjy # GitHub 사용자명으로 변경
+
+twitter:
+  username: twitter_username # Twitter 사용자명으로 변경
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Choi Jin Yong # 본인의 이름으로 변경
+  email: ccc5142@naver.com # 본인의 이메일로 변경
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/username # Twitter 프로필 링크로 변경
+    - https://github.com/username # GitHub 프로필 링크로 변경
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
+
+# Site Verification Settings
+webmaster_verifications:
+  google: # Google Search Console 인증 코드
+  bing: # Bing Webmaster Tools 인증 코드
+  alexa: # Alexa 인증 코드
+  yandex: # Yandex Webmaster 인증 코드
+  baidu: # Baidu Webmaster 인증 코드
+  facebook: # Facebook 인증 코드
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+# Web Analytics Settings
+analytics:
+  google:
+    id: # Google Analytics 추적 ID
+  goatcounter:
+    id: # GoatCounter 추적 ID
+  umami:
+    id: # Umami 추적 ID
+    domain: # Umami 도메인
+  matomo:
+    id: # Matomo 추적 ID
+    domain: # Matomo 도메인
+  cloudflare:
+    id: # Cloudflare Web Analytics 토큰
+  fathom:
+    id: # Fathom 사이트 ID
+
+# Page views settings
+pageviews:
+  provider: # 현재는 'goatcounter'만 지원
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
+#
+theme_mode: # [light | dark] - 테마 모드 설정
+
+# The CDN endpoint for media resources.
+# Notice that once it is assigned, the CDN url
+# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+cdn: # CDN 엔드포인트 설정
+
+# the avatar on sidebar, support local or CORS resources
+avatar: # 사이드바에 표시될 아바타 이미지 URL
+
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+# It can be overridden by a customized `page.image` in front matter.
+social_preview_image: # 소셜 미디어 공유 시 표시될 대표 이미지
+
+# boolean type, the global switch for TOC in posts.
+toc: true # 포스트의 목차 표시 여부
+
+comments:
+  # Global switch for the post-comment system. Keeping it empty means disabled.
+  provider: # [disqus | utterances | giscus] - 댓글 시스템 선택
+  # The provider options are as follows:
+  disqus:
+    shortname: # Disqus shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo> - 댓글을 저장할 GitHub 저장소
+    issue_term: # < url | pathname | title | ...> - 이슈 생성 방식
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo> - 댓글을 저장할 GitHub 저장소
+    repo_id: # 저장소 ID
+    category: # 카테고리
+    category_id: # 카테고리 ID
+    mapping: # optional, default to 'pathname'
+    strict: # optional, default to '0'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # 정적 자원 직접 호스팅 여부
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development | production] - 적용 환경
+
+pwa:
+  enabled: true # PWA 기능 활성화 여부
+  cache:
+    enabled: true # 오프라인 캐시 기능 활성화 여부
+    # Paths defined here will be excluded from the PWA cache.
+    # Usually its value is the `baseurl` of another website that
+    # shares the same domain name as the current website.
+    deny_paths:
+      # - "/example"  # PWA 캐시에서 제외할 경로
+
+paginate: 10 # 한 페이지에 표시할 포스트 수
+
+# The base URL of your site
+baseurl: " https://hd-cjy.github.io/HD-cjy/" # 사이트의 기본 URL 경로
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # 포스트에 댓글 기능 활성화
+      toc: true # 포스트에 목차 표시
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - rollup.config.js
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
