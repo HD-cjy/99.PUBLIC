@@ -150,7 +150,7 @@ pwa:
 paginate: 10 # 한 페이지에 표시할 포스트 수
 
 # The base URL of your site
-baseurl: " https://hd-cjy.github.io/HD-cjy/" # 사이트의 기본 URL 경로
+baseurl: "/HD-cjy " # 사이트의 기본 URL 경로
 
 # ------------ The following options are not recommended to be modified ------------------
 
