@@ -5,12 +5,13 @@ on:
     branches:
       - main
     paths:
-      - "_posts/**"
-      - "_config.yml"
-      - "_data/**"
-      - "_tabs/**"
-      - "assets/**"
-      - ".github/workflows/deploy.yml"
+      - "99.PUBLIC/00.Blog/HD-cjy/_posts/**"
+      - "99.PUBLIC/00.Blog/HD-cjy/_config.yml"
+      - "99.PUBLIC/00.Blog/HD-cjy/_data/**"
+      - "99.PUBLIC/00.Blog/HD-cjy/_tabs/**"
+      - "99.PUBLIC/00.Blog/HD-cjy/assets/**"
+      - "99.PUBLIC/00.Blog/HD-cjy/.github/workflows/deploy.yml"
+
 
 permissions:
   contents: read
@@ -21,7 +22,7 @@ env:
   JEKYLL_ENV: production
 
 jobs:
-  build:
+  build: 
     name: 🚪 Build Jekyll Site
     runs-on: ubuntu-latest
 
