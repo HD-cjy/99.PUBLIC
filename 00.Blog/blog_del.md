@@ -1,4 +1,1 @@
-public Repo testing_on notebook 
-
-new method() - try ...12..
-just Trigger.
+0506 슬슬프로젝트 시작해야할 타이밍이긴 해
