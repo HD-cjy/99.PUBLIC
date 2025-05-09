@@ -30,4 +30,21 @@ EL표기법으로 키값을 찾을 땐 작은 범위의 Scope 부터 찾아서
 page->request->session->application 순으로 찾는다.
 만약 모든 영역에서 찾지 못했다면 아무것도 출력하지 않는다. 
 (오류 발생하지 않음.)
- 
+
+
+
+<%-- 표현법 : \[영역Scope.키\] --%>
+	pageScoper에 담긴 값: ${scope} 또는 ${pageScope.scope } 
+	pageScope에 담긴 값 : ${scope} 또는 ${pageScope.scope} 
+	requestScope에 담긴 값 : ${requestScope.scope}
+	sessionScope에 담긴 값 : ${sessionScope.scope} 
+	applicationScope에 담긴 값 : ${applicationScope.scope} 
+	`존재하지 않는 키값에 접근해보기 ${test} ` ==> 값이 안나옴
+	`존재하지 않는 키값에 접근해보기 표현식:<%=request.getAttribute("test")` ==> 값이 null로 나옴
+
+
+
+`이름 : ${student.name}` <<< 이 구문은 내부적으로 getter메소드가 있어서 호출해주는 것일 뿐 없으면 작동안한다! 
+
+
+## EL 연산자 (Operator)
